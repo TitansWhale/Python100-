@@ -34,6 +34,9 @@
     <Compile Include="pythonExample\example4.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="pythonExample\python5.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="pythonExample\" />
