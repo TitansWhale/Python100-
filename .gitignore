@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 /pytest/pythonExample/python5.py
+/pytest/pythonExample/example12.py
