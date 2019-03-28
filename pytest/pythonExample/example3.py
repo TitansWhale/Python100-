@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+ 
 for i in range(1,85):
     if 168 % i == 0:
         j = 168 / i;
