@@ -3,26 +3,39 @@
 
 程序分析：请参照程序Python 练习实例14。
 """
-
-a=(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97)
-
 import numpy as np
-#返回他所有的因数
-def output(x):
-    temp=[]
-    while True:
-        for da in a:
-            if da==x:
-                temp.append(da)
-                return temp
-            elif x % da == 0:
-                temp.append(da)
-                x/=da
-                break;
+from math import sqrt
+#d打印start到end 的素数 1-100
+def outSuShu(start,end):
+	ret=[]
+	for m in range(start,end+1):
+		leap=1
+		k = int(sqrt(m + 1))
+		for i in range(2,k + 1):
+			if m % i == 0:
+				leap = 0
+				break
+		if leap == 1:
+			ret.append(int(m))    
+	return ret        
 
+#计算因数
+def yinshu(x):
+    ret=[]
+    for i in range(1,x//2+1):
+        if x%i==0:
+            ret.append(int (i))
+    return ret
 
-for x in range(1,1001):
-    temp=output(x)
-    if x==sum(temp):
-        print(x)
-        print(temp)
+#计算完数
+def wanshu(end):
+    ret=[]
+    temp=yinshu(end)
+    for i in range(1,end+1):
+        temp = yinshu(i)
+        if i ==sum(temp):
+            ret.append(i)
+    return ret
+
+out=wanshu(1000)
+print(out)
