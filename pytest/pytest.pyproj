@@ -56,6 +56,9 @@
     <Compile Include="pythonExample\example20.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="pythonExample\example21.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pythonExample\example3.py">
       <SubType>Code</SubType>
     </Compile>
