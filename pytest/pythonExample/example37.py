@@ -11,3 +11,4 @@ a=[random.randint(0,50) for i in range(10)]
 b=a
 a.sort()
 print(a)
+
