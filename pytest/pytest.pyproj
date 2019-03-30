@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>be6214af-a89d-4615-a95b-8abc21709e1a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>pythonExample\example46.py</StartupFile>
+    <StartupFile>pythonExample\example47.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -141,6 +141,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="pythonExample\example46.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="pythonExample\example47.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="pythonExample\example6.py">
